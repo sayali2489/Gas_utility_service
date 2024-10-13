@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Service Requests</title>
+</head>
+<body>
+    <h2>Your Service Requests</h2>
+    <ul>
+        {% for request in requests %}
+            <li>{{ request.request_type }} - {{ request.status }} (Submitted on: {{ request.created_at }})</li>
+        {% empty %}
+            <li>You have no service requests.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

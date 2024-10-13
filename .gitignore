@@ -1,0 +1,23 @@
+
+*.pyc
+*.pyo
+__pycache__/
+# Virtual environment
+venv/
+env/
+# Django-related files
+*.log
+db.sqlite3
+*.pot
+*.sqlite3
+media/
+staticfiles/
+# Ignore Django secret key
+*.env
+.env
+# Windows files
+Thumbs.db
+# Git configuration
+*.swp
+*.swo
+ 
